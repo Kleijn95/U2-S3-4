@@ -2,6 +2,7 @@ const URL = "https://api.pexels.com/v1/search?query=sea";
 const URL2 = "https://api.pexels.com/v1/search?query=dog";
 const secondButton = document.getElementById("loadNextImages");
 const firstButton = document.getElementById("loadImages");
+const form = document.getElementById("searchForm");
 
 firstButton.addEventListener("click", function () {
   fetch(URL, {
@@ -126,3 +127,9 @@ secondButton.addEventListener("click", function () {
       }
     });
 });
+
+// form.onsubmit = (e) => {
+//   e.preventDefault();
+
+//   loadImages(form.value);
+// };
